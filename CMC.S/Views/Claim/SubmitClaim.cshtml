@@ -1,0 +1,14 @@
+﻿@model CMCS.Models.Claim
+<form asp-action="SubmitClaim" method="post">
+    <div class="form-group">
+        <label for="hoursWorked">Hours Worked</label>
+        <input type="number" asp-for="HoursWorked" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label for="supportingDocument">Upload Document</label>
+        <input type="file" asp-for="SupportingDocument" class="form-control" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit Claim</button>
+</form>
